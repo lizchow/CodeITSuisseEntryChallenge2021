@@ -33,8 +33,10 @@ def validate_rate_dates(day_rates, night_rates):
 
 if __name__ == "__main__":
     input_string = ''
-    for line in sys.stdin:
-        input_string += line
+    lines = []
+    with open('input.in') as f:
+        lines = f.readlines()
+    input_string = input_string.join(lines)
 
     input_json = json.loads(input_string)
 

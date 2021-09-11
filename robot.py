@@ -37,7 +37,6 @@ class Robot:
             rate = self.get_rate(temp_start_time)
             value, lapsed_time = rate.calculate_value(temp_start_time,
                                                       end_time)
-            # print(value, lapsed_time)
             total_value += value
             temp_start_time += timedelta(minutes=lapsed_time)
 

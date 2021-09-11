@@ -2,7 +2,7 @@ from datetime import date
 from datetime import datetime
 from datetime import time
 from datetime import timedelta
-
+from math import ceil
 
 class Rate:
     def __init__(self, start_time, end_time, value):
@@ -26,7 +26,8 @@ class Rate:
             datetime2 = datetime.combine(date.today(), time2)
         duration = datetime2 - datetime1
         duration_in_s = duration.total_seconds()
-        return divmod(duration_in_s, 60)[0]
+        
+        return ceil(duration_in_s / 60)
 
     # Returns true if the shift_date is within the start
     # and end time of the rate, false otherwise
