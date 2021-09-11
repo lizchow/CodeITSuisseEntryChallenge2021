@@ -1,0 +1,28 @@
+{
+  "shift": {
+    "start": "2038-01-01T20:15:00",
+    "end": "2038-01-02T04:15:00"
+  },
+  "roboRate": {
+    "standardNight": {
+      "start": "07:00:00",
+      "end": "23:00:00",
+      "value": 20
+    },
+    "standardDay": {
+      "start": "23:00:00",
+      "end": "07:00:00",
+      "value": 25
+    },
+    "extraNight": {
+      "start": "07:00:00",
+      "end": "23:00:00",
+      "value": 30
+    },
+    "extraDay": {
+      "start": "23:00:00",
+      "end": "07:00:00",
+      "value": 35
+    }
+  }
+}
